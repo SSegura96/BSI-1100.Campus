@@ -16,7 +16,7 @@ namespace ProyectoPrograIV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VerBD_Estandar());
+            Application.Run(new Contrasenna());
         }
     }
 }

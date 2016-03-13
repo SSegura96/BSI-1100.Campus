@@ -12,9 +12,24 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -32,6 +47,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ProyectoPrograIV.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +84,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic.cs" />
+    <Compile Include="Contrasenna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrasenna.Designer.cs">
+      <DependentUpon>Contrasenna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica.cs" />
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="VerBD_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +111,21 @@
     <Compile Include="VerBD_Estandar.Designer.cs">
       <DependentUpon>VerBD_Estandar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Contrasenna.resx">
+      <DependentUpon>Contrasenna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="VerBD_Estandar.resx">
       <DependentUpon>VerBD_Estandar.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,43 +143,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ImagenesMaterias\ArtesIndustriales.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\CienciasNaturales.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\Computacion.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\EducacionArtistica.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\EducacionDelHogar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\EducacionFisica.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\EducacionMusical.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\EducacionReligiosa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\Español.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\HistoriaYGeografia.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\Ingles.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ImagenesMaterias\Matematicas.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="BackgroundMaterias\verBD_Estandar.jpg" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
