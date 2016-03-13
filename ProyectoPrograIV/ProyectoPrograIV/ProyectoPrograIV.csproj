@@ -84,11 +84,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contraseña.cs">
+    <Compile Include="Contrasenna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contraseña.Designer.cs">
-      <DependentUpon>Contraseña.cs</DependentUpon>
+    <Compile Include="Contrasenna.Designer.cs">
+      <DependentUpon>Contrasenna.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica.cs" />
     <Compile Include="MenuPrincipal.cs">
@@ -111,8 +111,8 @@
     <Compile Include="VerBD_Estandar.Designer.cs">
       <DependentUpon>VerBD_Estandar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Contraseña.resx">
-      <DependentUpon>Contraseña.cs</DependentUpon>
+    <EmbeddedResource Include="Contrasenna.resx">
+      <DependentUpon>Contrasenna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

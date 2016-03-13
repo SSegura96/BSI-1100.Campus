@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograIV
 {
-    public partial class Contraseña : Form
+    public partial class Contrasenna : Form
     {
-        public Contraseña()
+        public Contrasenna()
         {
             InitializeComponent();
         }
