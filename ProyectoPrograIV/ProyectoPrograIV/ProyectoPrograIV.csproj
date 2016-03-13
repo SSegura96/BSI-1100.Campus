@@ -49,6 +49,11 @@
     <Compile Include="Logic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="VerBD_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,13 +68,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="VerBD_Estandar.resx">
       <DependentUpon>VerBD_Estandar.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +86,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\ArtesIndustriales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\CienciasNaturales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\Computacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\EducacionArtistica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\EducacionDelHogar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\EducacionFisica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\EducacionMusical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\EducacionReligiosa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\Español.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\HistoriaYGeografia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\Ingles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImagenesMaterias\Matematicas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BackgroundMaterias\verBD_Estandar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
