@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograIV
 {
-    public partial class Form1 : Form
+    public partial class VerBD_Admin : Form
     {
-        public Form1()
+        public VerBD_Admin()
         {
             InitializeComponent();
         }
