@@ -16,5 +16,10 @@ namespace ProyectoPrograIV
         {
             InitializeComponent();
         }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
