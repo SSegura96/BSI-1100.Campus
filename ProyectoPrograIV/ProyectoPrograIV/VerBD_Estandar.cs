@@ -50,20 +50,20 @@ namespace ProyectoPrograIV
         //este metodo sirve para iniciar el combo box con el primer item
         private void iniciarComboBox()
         {
-            int comboItem = 0;//posicion de la imagen
-            cbxMaterias.SelectedIndex = 0;//item del combo box
-            pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);//agrega la imagen la imgen
-            pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;//pone imagen en modo estrecho
+            //int comboItem = 0;//posicion de la imagen
+            //cbxMaterias.SelectedIndex = 0;//item del combo box
+            //pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);//agrega la imagen la imgen
+            //pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;//pone imagen en modo estrecho
         }
 
         //cambia la imgen conforme al idice del vector
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int comboItem = 0;
-            comboItem = cbxMaterias.SelectedIndex;
-            pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);
-            pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;
-            //txtInfoMateria.Text = informacionMaterias;
+            //int comboItem = 0;
+            //comboItem = cbxMaterias.SelectedIndex;
+            //pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);
+            //pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;
+            ////txtInfoMateria.Text = informacionMaterias;
         }
 
         private void pBImagenMateria_Click(object sender, EventArgs e)
