@@ -88,7 +88,9 @@ namespace ProyectoPrograIV
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
-            //FORM PRINCIPAL.HIDE
+            //FORMPRINCIPAL FMP = NEW FORM();
+            //FMP.HIDE();
+            //lleguele pa
         }
     }
 }
