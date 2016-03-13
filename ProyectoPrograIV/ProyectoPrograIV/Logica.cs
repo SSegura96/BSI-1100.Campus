@@ -32,7 +32,7 @@ namespace ProyectoPrograIV
             this.SecureLock = _sLock;
         }
 
-        private void ConectarAccess(String query)
+        public void ConectarAccess(String query)
         {
             OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
             OleDbCommand orden = new OleDbCommand(query, conexion);
@@ -41,7 +41,7 @@ namespace ProyectoPrograIV
             orden.Connection.Close();
         }
 
-        private String ObtenerDato(String query)
+        public String ObtenerDato(String query)
         {
             String data = "";
             try
@@ -59,6 +59,21 @@ namespace ProyectoPrograIV
             }
 
             return data;
+        }
+
+        public bool validarUsuarioContrasenna(String user, String pass)
+        {
+            String dbUser = "RKoch3196";
+            String dbPass = "rk001";
+
+            if(user.Equals(dbUser) && dbPass.Equals(pass))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -15,11 +15,19 @@ namespace ProyectoPrograIV
         public MenuPrincipal()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Contrasenna pass = new Contrasenna();
+            pass.Show();
         }
     }
 }
