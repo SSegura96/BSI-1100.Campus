@@ -105,11 +105,11 @@
     <Compile Include="frmVerBD_MateriasAdmin.Designer.cs">
       <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="VerBD_Estandar.cs">
+    <Compile Include="frmVerBD_MateriasEstandar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VerBD_Estandar.Designer.cs">
-      <DependentUpon>VerBD_Estandar.cs</DependentUpon>
+    <Compile Include="frmVerBD_MateriasEstandar.Designer.cs">
+      <DependentUpon>frmVerBD_MateriasEstandar.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Contrasenna.resx">
       <DependentUpon>Contrasenna.cs</DependentUpon>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="frmVerBD_MateriasAdmin.resx">
       <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VerBD_Estandar.resx">
-      <DependentUpon>VerBD_Estandar.cs</DependentUpon>
+    <EmbeddedResource Include="frmVerBD_MateriasEstandar.resx">
+      <DependentUpon>frmVerBD_MateriasEstandar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
