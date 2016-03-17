@@ -99,11 +99,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VerBD_Admin.cs">
+    <Compile Include="frmVerBD_MateriasAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VerBD_Admin.Designer.cs">
-      <DependentUpon>VerBD_Admin.cs</DependentUpon>
+    <Compile Include="frmVerBD_MateriasAdmin.Designer.cs">
+      <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="VerBD_Estandar.cs">
       <SubType>Form</SubType>
@@ -126,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmVerBD_MateriasAdmin.resx">
+      <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VerBD_Estandar.resx">
       <DependentUpon>VerBD_Estandar.cs</DependentUpon>
     </EmbeddedResource>
