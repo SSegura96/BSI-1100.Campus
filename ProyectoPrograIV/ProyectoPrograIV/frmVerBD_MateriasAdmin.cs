@@ -45,5 +45,11 @@ namespace ProyectoPrograIV
             ////Pone las columnas en modo autoajuste lo cual permite que se adapten al tamaño del dataGried
             //dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }//fin evento void frmVerBD_MateriasAdmin_Load(object sender, EventArgs e)
+
+        //evento para agregar materias a la data base
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }//fin evento void btnAgregar_Click(object sender, EventArgs e)
     }
 }

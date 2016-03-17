@@ -42,6 +42,7 @@
             this.btnAgregar.Size = new System.Drawing.Size(81, 38);
             this.btnAgregar.TabIndex = 18;
             this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dataGridView1
             // 
