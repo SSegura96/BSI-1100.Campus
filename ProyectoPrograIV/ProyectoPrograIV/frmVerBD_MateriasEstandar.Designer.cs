@@ -1,4 +1,6 @@
-﻿namespace ProyectoPrograIV
+﻿using System;
+
+namespace ProyectoPrograIV
 {
     partial class frmVerBD_MateriasEstandar
     {
@@ -134,6 +136,14 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        //cierra la ventana actual y muestra el menu principal
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal principal = new MenuPrincipal();
+            this.Close();
+            principal.Show();
         }
 
         #endregion
