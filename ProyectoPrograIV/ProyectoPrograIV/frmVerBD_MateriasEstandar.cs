@@ -20,9 +20,10 @@ namespace ProyectoPrograIV
             iniciarComboBox();//metodo para iniciar el combo box
             //this.dataGridView1.CellContentClick -= new DataGridViewCellEventHandler(dataGridView1_CellContentClick);
             this.pBImagenMateria.Click -= new EventHandler(pBImagenMateria_Click);//esto desactiva el evento supuestamente
-        }
+            this.BackgroundImage = ProyectoPrograIV.Properties.Resources.verBD_Estandar;//se establece imgen de fondo
+        }//fin constructor
 
-        string[] vectorImg = new string [12];
+        Object[] vectorImg = new object [12];
         ArrayList informacionMaterias = new ArrayList();
 
         //se llena el ArrayList con la informacion de cada materia
@@ -40,44 +41,44 @@ namespace ProyectoPrograIV
             informacionMaterias.Add("El objetivo de esta materia es brindarle cultura general al estudiante sobre la historia del mundo y como es la geografia del mismo.");//HistoriaYGeografia
             informacionMaterias.Add("Esta materia tiene como objetivo motivar al estudiante y enseñarle lo que posiblemente sera su segundo idioma y segunda lengua materna en el futuro.");//Ingles
             informacionMaterias.Add("El curso pretende motivar al estudiante a utilizar su razonamiento logico para aprender a usar operaciones basicas de matematicas.");//Matematicas
-        }
+        }//fin mentodo void llenarArrayList()
 
-        //Metodo para llenar el vector con la ubicacion de las imagenes
+        //Metodo para llenar el vector con la ubicacion de las imagenes importadas en el proyecto
         private void llenarVector()
         {
-            vectorImg[0] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\ArtesIndustriales.jpg";
-            vectorImg[1] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\CienciasDeLaNaturaleza.jpg";
-            vectorImg[2] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\Computacion.jpg";
-            vectorImg[3] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\EducacionArtistica.jpg";
-            vectorImg[4] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\EducacionFisica.jpg";
-            vectorImg[5] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\EducacionDelHogar.jpg";
-            vectorImg[6] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\EducacionMusical.jpg";
-            vectorImg[7] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\Español.jpg";
-            vectorImg[8] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\EducacionReligiosa.jpg";
-            vectorImg[9] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\HistoriaYGeografia.jpg";
-            vectorImg[10] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\Ingles.jpg";
-            vectorImg[11] = "C:\\Users\\Javier\\Documents\\Visual Studio 2015\\GitHub\\ProyectSpace\\ProyectoPrograIV\\ProyectoPrograIV\\ImagenesMaterias\\Matematicas.jpg";
-        }
+            vectorImg[0] = ProyectoPrograIV.Properties.Resources.ArtesIndustriales;
+            vectorImg[1] = ProyectoPrograIV.Properties.Resources.CienciasNaturales;
+            vectorImg[2] = ProyectoPrograIV.Properties.Resources.Computacion;
+            vectorImg[3] = ProyectoPrograIV.Properties.Resources.EducacionArtistica;
+            vectorImg[4] = ProyectoPrograIV.Properties.Resources.EducacionFisica;
+            vectorImg[5] = ProyectoPrograIV.Properties.Resources.EducacionDelHogar;
+            vectorImg[6] = ProyectoPrograIV.Properties.Resources.EducacionMusical;
+            vectorImg[7] = ProyectoPrograIV.Properties.Resources.Español;
+            vectorImg[8] = ProyectoPrograIV.Properties.Resources.EducacionReligiosa;
+            vectorImg[9] = ProyectoPrograIV.Properties.Resources.HistoriaYGeografia;
+            vectorImg[10] = ProyectoPrograIV.Properties.Resources.Ingles;
+            vectorImg[11] = ProyectoPrograIV.Properties.Resources.Matematicas;
+        }//fin metodo void llenarVector()
 
         //este metodo sirve para iniciar el combo box con el primer item
         private void iniciarComboBox()
         {
             int comboItem = 0;//posicion de la imagen
             cbxMaterias.SelectedIndex = 0;//item del combo box
-            pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);//agrega la imagen la imgen
+            pBImagenMateria.Image = (Image)vectorImg[comboItem];//agrega la imagen la imgen
             pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;//pone imagen en modo estrecho
             txtInfoMateria.Text = informacionMaterias[(comboItem)].ToString();//carga la informacion que contiene el arraylist en el txt
-        }
+        }//fin metodo void iniciarComboBox()
 
         //cambia la imgen y la informacion conforme al idice del vector y arraylist respectivamente
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int comboItem = 0;
             comboItem = cbxMaterias.SelectedIndex;
-            pBImagenMateria.Image = Image.FromFile(vectorImg[comboItem]);
+            pBImagenMateria.Image = (Image)vectorImg[comboItem];
             pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;
             txtInfoMateria.Text = informacionMaterias[(comboItem)].ToString();
-        }
+        }//fin evento void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         //EVENTO SIN USO-----------------------------------------------------------------------------------
         private void pBImagenMateria_Click(object sender, EventArgs e)

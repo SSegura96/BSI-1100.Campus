@@ -63,6 +63,7 @@
             this.btnAtras.Size = new System.Drawing.Size(81, 38);
             this.btnAtras.TabIndex = 16;
             this.btnAtras.Text = "Atras";
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click_1);
             // 
             // frmVerBD_MateriasAdmin
             // 
@@ -71,6 +72,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAtras);
             this.Name = "frmVerBD_MateriasAdmin";
+            this.Text = "Materias: Lista de Materias - Administrador";
             this.Load += new System.EventHandler(this.frmVerBD_MateriasAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
