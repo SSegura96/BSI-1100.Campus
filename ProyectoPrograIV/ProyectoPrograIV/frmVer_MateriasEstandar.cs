@@ -11,9 +11,9 @@ using System.Collections;//import de arraylist
 
 namespace ProyectoPrograIV
 {
-    public partial class frmVerBD_MateriasEstandar : Form
+    public partial class frmVer_MateriasEstandar : Form
     {
-        public frmVerBD_MateriasEstandar()
+        public frmVer_MateriasEstandar()
         {
             InitializeComponent();
             llenarVector();//se usa el metodo para llenar el vector

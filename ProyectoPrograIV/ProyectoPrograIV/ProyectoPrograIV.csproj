@@ -117,12 +117,15 @@
     <Compile Include="frmVerBD_MateriasAdmin.Designer.cs">
       <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVerBD_MateriasEstandar.cs">
+    <Compile Include="frmVer_MateriasEstandar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVerBD_MateriasEstandar.Designer.cs">
-      <DependentUpon>frmVerBD_MateriasEstandar.cs</DependentUpon>
+    <Compile Include="frmVer_MateriasEstandar.Designer.cs">
+      <DependentUpon>frmVer_MateriasEstandar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAgregarProfesores.resx">
+      <DependentUpon>frmAgregarProfesores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmContrasenna.resx">
       <DependentUpon>frmContrasenna.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,8 +147,8 @@
     <EmbeddedResource Include="frmVerBD_MateriasAdmin.resx">
       <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVerBD_MateriasEstandar.resx">
-      <DependentUpon>frmVerBD_MateriasEstandar.cs</DependentUpon>
+    <EmbeddedResource Include="frmVer_MateriasEstandar.resx">
+      <DependentUpon>frmVer_MateriasEstandar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

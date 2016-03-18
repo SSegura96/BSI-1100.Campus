@@ -2,7 +2,7 @@
 
 namespace ProyectoPrograIV
 {
-    partial class frmVerBD_MateriasEstandar
+    partial class frmVer_MateriasEstandar
     {
         /// <summary>
         /// Required designer variable.

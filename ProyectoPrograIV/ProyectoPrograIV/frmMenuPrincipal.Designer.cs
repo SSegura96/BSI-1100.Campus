@@ -37,7 +37,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnAgregarProfesores = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,12 +53,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(121, 101);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -115,14 +116,15 @@
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnAgregarProfesores
             // 
-            this.button8.Location = new System.Drawing.Point(221, 453);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnAgregarProfesores.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarProfesores.Location = new System.Drawing.Point(221, 453);
+            this.btnAgregarProfesores.Name = "btnAgregarProfesores";
+            this.btnAgregarProfesores.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProfesores.TabIndex = 8;
+            this.btnAgregarProfesores.Text = "Agregar Profesores";
+            this.btnAgregarProfesores.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
@@ -133,13 +135,13 @@
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // MenuPrincipal
+            // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 539);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnAgregarProfesores);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -148,7 +150,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "MenuPrincipal";
+            this.Name = "frmMenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -166,7 +168,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnAgregarProfesores;
         private System.Windows.Forms.Button button9;
     }
 }
