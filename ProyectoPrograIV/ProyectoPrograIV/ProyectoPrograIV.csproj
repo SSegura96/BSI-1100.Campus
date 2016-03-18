@@ -84,11 +84,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contrasenna.cs">
+    <Compile Include="frmAgregarProfesores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contrasenna.Designer.cs">
-      <DependentUpon>Contrasenna.cs</DependentUpon>
+    <Compile Include="frmAgregarProfesores.Designer.cs">
+      <DependentUpon>frmAgregarProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContrasenna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContrasenna.Designer.cs">
+      <DependentUpon>frmContrasenna.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAgregarMateriasAdmin.cs">
       <SubType>Form</SubType>
@@ -97,11 +103,11 @@
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica.cs" />
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,14 +123,14 @@
     <Compile Include="frmVerBD_MateriasEstandar.Designer.cs">
       <DependentUpon>frmVerBD_MateriasEstandar.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Contrasenna.resx">
-      <DependentUpon>Contrasenna.cs</DependentUpon>
+    <EmbeddedResource Include="frmContrasenna.resx">
+      <DependentUpon>frmContrasenna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMateriasAdmin.resx">
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

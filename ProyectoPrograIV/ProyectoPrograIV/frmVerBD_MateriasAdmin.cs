@@ -51,7 +51,7 @@ namespace ProyectoPrograIV
 
         private void btnAtras_Click_1(object sender, EventArgs e)
         {
-            MenuPrincipal principal = new MenuPrincipal();
+            frmMenuPrincipal principal = new frmMenuPrincipal();
             this.Close();
             principal.Show();
         }//fin evento void btnAtras_Click_1(object sender, EventArgs e)

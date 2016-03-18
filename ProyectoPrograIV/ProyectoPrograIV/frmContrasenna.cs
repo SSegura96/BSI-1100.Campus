@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograIV
 {
-    public partial class Contrasenna : Form
+    public partial class frmContrasenna : Form
     {
         private int tipo = 0;
 
-        public Contrasenna()
+        public frmContrasenna()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -55,7 +55,7 @@ namespace ProyectoPrograIV
             if (lg.validarUsuarioContrasenna(User, Pass))
             {
                 this.Hide();
-                MenuPrincipal mp = new MenuPrincipal();
+                frmMenuPrincipal mp = new frmMenuPrincipal();
                 mp.Show();
             }
             else

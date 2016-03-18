@@ -141,7 +141,7 @@ namespace ProyectoPrograIV
         //cierra la ventana actual y muestra el menu principal
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            MenuPrincipal principal = new MenuPrincipal();
+            frmMenuPrincipal principal = new frmMenuPrincipal();
             this.Close();
             principal.Show();
         }

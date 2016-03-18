@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPrograIV
 {
-    public partial class MenuPrincipal : Form
+    public partial class frmMenuPrincipal : Form
     {
-        public MenuPrincipal()
+        public frmMenuPrincipal()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -26,7 +26,7 @@ namespace ProyectoPrograIV
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Contrasenna pass = new Contrasenna();
+            frmContrasenna pass = new frmContrasenna();
             pass.Show();
         }
     }

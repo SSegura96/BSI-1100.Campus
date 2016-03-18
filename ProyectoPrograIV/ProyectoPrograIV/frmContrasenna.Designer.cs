@@ -1,6 +1,6 @@
 ﻿namespace ProyectoPrograIV
 {
-    partial class Contrasenna
+    partial class frmContrasenna
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contrasenna));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContrasenna));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.lbContrasenna = new System.Windows.Forms.Label();
