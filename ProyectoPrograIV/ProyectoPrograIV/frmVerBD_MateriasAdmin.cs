@@ -44,7 +44,9 @@ namespace ProyectoPrograIV
         //evento para agregar materias a la data base
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            frmAgregarMateriasAdmin agregar = new frmAgregarMateriasAdmin();
+            this.Hide();
+            agregar.Show();
         }//fin evento void btnAgregar_Click(object sender, EventArgs e)
 
         private void btnAtras_Click_1(object sender, EventArgs e)

@@ -90,6 +90,12 @@
     <Compile Include="Contrasenna.Designer.cs">
       <DependentUpon>Contrasenna.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarMateriasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarMateriasAdmin.Designer.cs">
+      <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="Contrasenna.resx">
       <DependentUpon>Contrasenna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarMateriasAdmin.resx">
+      <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
