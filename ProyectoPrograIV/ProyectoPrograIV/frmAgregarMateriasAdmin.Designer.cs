@@ -78,6 +78,7 @@
             this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblNota
             // 
@@ -141,6 +142,7 @@
             this.Controls.Add(this.lblNombreMateria);
             this.Name = "frmAgregarMateriasAdmin";
             this.Text = "Materias: Agregar Materias - Administrador";
+            this.Load += new System.EventHandler(this.frmAgregarMateriasAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
