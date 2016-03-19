@@ -13,18 +13,21 @@ namespace ProyectoPrograIV
 {
     public partial class frmVer_MateriasEstandar : Form
     {
+        object[] vectorImg = new object[12];//sea crea un vector de tipo objeto
+        ArrayList informacionMaterias = new ArrayList();//Se crea un ArrayList
+
         public frmVer_MateriasEstandar()
         {
-            
             InitializeComponent();
             llenarVector();//se usa el metodo para llenar el vector
             llenarArrayList();//se usa el metodo para llenar el arraylist
             iniciarComboBox();//metodo para iniciar el combo box
             this.BackgroundImage = ProyectoPrograIV.Properties.Resources.verBD_Estandar;//se establece imgen de fondo
+            this.StartPosition = FormStartPosition.CenterScreen;//pone el form en el centro de la pantalla
+            //evita cambiar el tamaño de la ventana
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false;
         }//fin constructor
-
-        Object[] vectorImg = new object [12];
-        ArrayList informacionMaterias = new ArrayList();
 
         //se llena el ArrayList con la informacion de cada materia
         private void llenarArrayList()
@@ -79,5 +82,14 @@ namespace ProyectoPrograIV
             pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;
             txtInfoMateria.Text = informacionMaterias[(comboItem)].ToString();
         }//fin evento void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        //cierra la ventana actual y muestra el menu principal
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal principal = new frmMenuPrincipal();
+            this.Close();
+            principal.Show();
+        }//fin metodo
+
     }//fin class
 }//fin namespace

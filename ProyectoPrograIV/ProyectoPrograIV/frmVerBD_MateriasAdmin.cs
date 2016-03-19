@@ -13,9 +13,15 @@ namespace ProyectoPrograIV
 {
     public partial class frmVerBD_MateriasAdmin : Form
     {
+        Logica logica = new Logica();
+
         public frmVerBD_MateriasAdmin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;//pone el form en el centro de la pantalla
+            //evita cambiar el tamaño de la ventana
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false;
         }//fin constructor
 
         //evento que realiza acciones cuando carga el form
@@ -35,13 +41,14 @@ namespace ProyectoPrograIV
             orden.Fill(tabla, "Materias");
 
             dataGridView1.DataSource = tabla.Tables[0];
+            //pone nombre a las columnas del DataGrid
             dataGridView1.Columns[0].HeaderText = "Codigo Materia";
             dataGridView1.Columns[1].HeaderText = "Nombre Materia";
             //Pone las columnas en modo autoajuste lo cual permite que se adapten al tamaño del dataGried
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }//fin evento void frmVerBD_MateriasAdmin_Load(object sender, EventArgs e)
 
-        //evento para agregar materias a la data base
+        //evento para agregar materias a la data base desde otro form
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             frmAgregarMateriasAdmin agregar = new frmAgregarMateriasAdmin();
@@ -55,5 +62,6 @@ namespace ProyectoPrograIV
             this.Close();
             principal.Show();
         }//fin evento void btnAtras_Click_1(object sender, EventArgs e)
-    }
-}
+
+    }//fin class
+}//fin namespace

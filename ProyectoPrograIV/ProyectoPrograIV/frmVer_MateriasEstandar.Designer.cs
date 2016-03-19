@@ -88,12 +88,11 @@ namespace ProyectoPrograIV
             // btnAtras
             // 
             this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(159, 264);
+            this.btnAtras.Location = new System.Drawing.Point(158, 266);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(110, 30);
-            this.btnAtras.TabIndex = 4;
+            this.btnAtras.Size = new System.Drawing.Size(103, 33);
+            this.btnAtras.TabIndex = 6;
             this.btnAtras.Text = "Atras";
-            this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // pBImagenMateria
@@ -135,14 +134,6 @@ namespace ProyectoPrograIV
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
-
-        //cierra la ventana actual y muestra el menu principal
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            frmMenuPrincipal principal = new frmMenuPrincipal();
-            this.Close();
-            principal.Show();
         }
 
         #endregion
