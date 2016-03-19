@@ -98,13 +98,12 @@ namespace ProyectoPrograIV
             // 
             // pBImagenMateria
             // 
+            this.pBImagenMateria.BackColor = System.Drawing.Color.Transparent;
             this.pBImagenMateria.Location = new System.Drawing.Point(12, 93);
             this.pBImagenMateria.Name = "pBImagenMateria";
-            this.pBImagenMateria.Size = new System.Drawing.Size(177, 151);
-            this.pBImagenMateria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBImagenMateria.TabIndex = 1;
+            this.pBImagenMateria.Size = new System.Drawing.Size(182, 151);
+            this.pBImagenMateria.TabIndex = 6;
             this.pBImagenMateria.TabStop = false;
-            this.pBImagenMateria.Click += new System.EventHandler(this.pBImagenMateria_Click);
             // 
             // lblInfo
             // 
@@ -118,7 +117,7 @@ namespace ProyectoPrograIV
             this.lblInfo.TabIndex = 5;
             this.lblInfo.Text = "Descripcion Materia";
             // 
-            // VerBD_Estandar
+            // frmVer_MateriasEstandar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +129,7 @@ namespace ProyectoPrograIV
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.pBImagenMateria);
             this.Controls.Add(this.cbxMaterias);
-            this.Name = "VerBD_Estandar";
+            this.Name = "frmVer_MateriasEstandar";
             this.Text = "Materias: Lista de Materias";
             ((System.ComponentModel.ISupportInitialize)(this.pBImagenMateria)).EndInit();
             this.ResumeLayout(false);

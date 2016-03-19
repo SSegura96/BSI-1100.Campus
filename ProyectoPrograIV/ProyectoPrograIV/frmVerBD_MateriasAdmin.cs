@@ -26,7 +26,7 @@ namespace ProyectoPrograIV
             DataSet tabla; //tabla
 
             conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath + "\\Escuela.accdb");
-            string query = "SELECT Nombre ,Profesor FROM Materias";
+            string query = "SELECT CodMateria ,Nombre FROM Materias";
 
             orden = new OleDbDataAdapter(query, conexion);
 
@@ -35,8 +35,8 @@ namespace ProyectoPrograIV
             orden.Fill(tabla, "Materias");
 
             dataGridView1.DataSource = tabla.Tables[0];
-            dataGridView1.Columns[0].HeaderText = "Nombre Materia";
-            dataGridView1.Columns[1].HeaderText = "Nombre Profesor";
+            dataGridView1.Columns[0].HeaderText = "Codigo Materia";
+            dataGridView1.Columns[1].HeaderText = "Nombre Materia";
             //Pone las columnas en modo autoajuste lo cual permite que se adapten al tamaño del dataGried
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }//fin evento void frmVerBD_MateriasAdmin_Load(object sender, EventArgs e)

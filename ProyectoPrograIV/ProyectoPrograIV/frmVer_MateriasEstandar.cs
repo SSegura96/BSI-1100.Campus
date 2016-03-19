@@ -15,11 +15,11 @@ namespace ProyectoPrograIV
     {
         public frmVer_MateriasEstandar()
         {
+            
             InitializeComponent();
             llenarVector();//se usa el metodo para llenar el vector
+            llenarArrayList();//se usa el metodo para llenar el arraylist
             iniciarComboBox();//metodo para iniciar el combo box
-            //this.dataGridView1.CellContentClick -= new DataGridViewCellEventHandler(dataGridView1_CellContentClick);
-            this.pBImagenMateria.Click -= new EventHandler(pBImagenMateria_Click);//esto desactiva el evento supuestamente
             this.BackgroundImage = ProyectoPrograIV.Properties.Resources.verBD_Estandar;//se establece imgen de fondo
         }//fin constructor
 
@@ -79,12 +79,5 @@ namespace ProyectoPrograIV
             pBImagenMateria.SizeMode = PictureBoxSizeMode.StretchImage;
             txtInfoMateria.Text = informacionMaterias[(comboItem)].ToString();
         }//fin evento void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-
-        //EVENTO SIN USO-----------------------------------------------------------------------------------
-        private void pBImagenMateria_Click(object sender, EventArgs e)
-        {
-
-        }
-        //EVENTO SIN USO
-    }
-}
+    }//fin class
+}//fin namespace
