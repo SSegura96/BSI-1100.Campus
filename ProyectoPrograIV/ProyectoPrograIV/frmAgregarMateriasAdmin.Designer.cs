@@ -35,7 +35,7 @@
             this.lblNombreMateria = new System.Windows.Forms.Label();
             this.txtCodMateria = new System.Windows.Forms.TextBox();
             this.lblNombreProfesor = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGenerarCodigo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAtras
@@ -108,22 +108,23 @@
             this.lblNombreProfesor.TabIndex = 18;
             this.lblNombreProfesor.Text = "Codigo de la Materia:";
             // 
-            // button1
+            // btnGenerarCodigo
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(42, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 30);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Generar Codigo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGenerarCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarCodigo.Location = new System.Drawing.Point(42, 93);
+            this.btnGenerarCodigo.Name = "btnGenerarCodigo";
+            this.btnGenerarCodigo.Size = new System.Drawing.Size(117, 30);
+            this.btnGenerarCodigo.TabIndex = 20;
+            this.btnGenerarCodigo.Text = "Generar Codigo";
+            this.btnGenerarCodigo.UseVisualStyleBackColor = true;
+            this.btnGenerarCodigo.Click += new System.EventHandler(this.btnGenerarCodigo_Click);
             // 
             // frmAgregarMateriasAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 151);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGenerarCodigo);
             this.Controls.Add(this.txtCodMateria);
             this.Controls.Add(this.lblNombreProfesor);
             this.Controls.Add(this.btnAtras);
@@ -147,6 +148,6 @@
         private System.Windows.Forms.Label lblNombreMateria;
         private System.Windows.Forms.TextBox txtCodMateria;
         private System.Windows.Forms.Label lblNombreProfesor;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGenerarCodigo;
     }
 }
