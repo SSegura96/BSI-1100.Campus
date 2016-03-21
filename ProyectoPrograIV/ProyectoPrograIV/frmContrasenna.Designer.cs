@@ -77,6 +77,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(179, 31);
             this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtContrasenna
             // 
@@ -85,6 +86,7 @@
             this.txtContrasenna.Name = "txtContrasenna";
             this.txtContrasenna.Size = new System.Drawing.Size(180, 31);
             this.txtContrasenna.TabIndex = 4;
+            this.txtContrasenna.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAcceder
             // 
@@ -119,7 +121,7 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // Contrasenna
+            // frmContrasenna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +134,7 @@
             this.Controls.Add(this.lbContrasenna);
             this.Controls.Add(this.lbUsuario);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Contrasenna";
+            this.Name = "frmContrasenna";
             this.Text = "Contraseña";
             this.Load += new System.EventHandler(this.Contrasenna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

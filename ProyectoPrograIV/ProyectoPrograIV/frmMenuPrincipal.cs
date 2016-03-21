@@ -50,5 +50,14 @@ namespace ProyectoPrograIV
             ms.Show();
             this.Hide();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //frmMostrar ms = new frmMostrar('U');
+            //ms.Show();
+            //this.Hide();
+            Logica lg = new Logica();
+            lg.ObtenerDato("SELECT * FROM Usuarios");
+        }
     }
 }

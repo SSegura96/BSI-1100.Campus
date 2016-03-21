@@ -54,9 +54,17 @@ namespace ProyectoPrograIV
             String Pass = txtContrasenna.Text;
             if (lg.validarUsuarioContrasenna(User, Pass))
             {
-                this.Hide();
-                frmMenuPrincipal mp = new frmMenuPrincipal();
-                mp.Show();
+                if(getTipo() == 0)
+                {
+                    frmMenuPrincipal mp = new frmMenuPrincipal();
+                    mp.Show();
+                }
+                else
+                {
+                    AgregarUsuario ag = new AgregarUsuario();
+                    ag.Show();
+                }
+                    this.Hide();
             }
             else
             {

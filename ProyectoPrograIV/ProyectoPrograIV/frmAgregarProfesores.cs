@@ -62,8 +62,7 @@ namespace ProyectoPrograIV
         {
             String query = "";
             query = "Insert into Profesores(CodProfesor,Nombre,Correo,Telefono) values ('" + txtCodigo.Text + "','" + txtNombre.Text + "','" + txtCorreo.Text + "', '"+txtTelefono.Text+"')";
-            lg.ConectarAccess(query);
-            MessageBox.Show("Datos guardados.");
+            lg.ConectarAccess(query, "Datos guardados.");
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace ProyectoPrograIV
 {
@@ -18,9 +19,9 @@ namespace ProyectoPrograIV
 
         }
 
-        public Logica (String _query)
+        public Logica (string _query, string mensaje)
         {
-            ConectarAccess(_query);
+            ConectarAccess(_query, mensaje);
         }
 
         public bool getSecureLock()
@@ -36,13 +37,21 @@ namespace ProyectoPrograIV
         /**
         Conecta con la base de datos y ejecuta el query que tinee por parametro
         */
-        public void ConectarAccess(String query)
+        public void ConectarAccess(string query, string mensaje)
         {
-            OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
-            OleDbCommand orden = new OleDbCommand(query, conexion);
-            orden.Connection.Open();
-            orden.ExecuteNonQuery();
-            orden.Connection.Close();
+            try
+            {
+                OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
+                OleDbCommand orden = new OleDbCommand(query, conexion);
+                orden.Connection.Open();
+                orden.ExecuteNonQuery();
+                orden.Connection.Close();
+                MessageBox.Show(mensaje);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error !!! "+ ex);
+            }
         }
 
         /**
@@ -57,7 +66,7 @@ namespace ProyectoPrograIV
                 OleDbCommand cmd = new OleDbCommand(query, conexion);
                 conexion.Open();
                 OleDbDataReader reader = cmd.ExecuteReader();
-                data = reader.GetString(0);
+                data = reader.GetData(0).ToString();
                 conexion.Close();
             }
             catch (Exception ex)
@@ -83,12 +92,12 @@ namespace ProyectoPrograIV
         /**
         Esta en cosntruccion XD, va a analizar cada nombre de usuario con el dado en la base de datos 
         */
-        public bool validarUsuarioContrasenna(String user, String pass)
+        public bool validarUsuarioContrasenna(string user, string pass)
         {
-            String dbUser = "RKoch3196";
-            String dbPass = "rk001";
+            string dbUser = "RKoch3196";
+            string dbPass = "rk001";
 
-            if(user.Equals(dbUser) && dbPass.Equals(pass))
+            if (user.Equals(dbUser) && dbPass.Equals(pass))
             {
                 return true;
             }

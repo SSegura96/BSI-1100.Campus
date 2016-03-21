@@ -75,6 +75,10 @@ namespace ProyectoPrograIV
                     return "Profesores";
                     break;
 
+                case 'U':
+                    return "Usuarios";
+                    break;
+
                 default:
                     return null;
                 break;
