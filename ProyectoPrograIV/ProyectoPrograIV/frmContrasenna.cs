@@ -106,5 +106,10 @@ namespace ProyectoPrograIV
             setTipo(1);
             cambiarEstado();
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
