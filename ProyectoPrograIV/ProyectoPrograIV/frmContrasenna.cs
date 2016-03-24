@@ -61,7 +61,7 @@ namespace ProyectoPrograIV
                 }
                 else
                 {
-                    AgregarUsuario ag = new AgregarUsuario();
+                    frmAgregarUsuario ag = new frmAgregarUsuario();
                     ag.Show();
                 }
                     this.Hide();

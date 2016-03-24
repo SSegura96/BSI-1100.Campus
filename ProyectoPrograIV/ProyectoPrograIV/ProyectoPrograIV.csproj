@@ -84,11 +84,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarUsuario.cs">
+    <Compile Include="frmAgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarUsuario.Designer.cs">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    <Compile Include="frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAgregarProfesores.cs">
       <SubType>Form</SubType>
@@ -136,8 +136,8 @@
       <DependentUpon>frmVer_MateriasEstandar.cs</DependentUpon>
     </Compile>
     <Compile Include="EstructuraUsuario.cs" />
-    <EmbeddedResource Include="AgregarUsuario.resx">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarProfesores.resx">
       <DependentUpon>frmAgregarProfesores.cs</DependentUpon>
