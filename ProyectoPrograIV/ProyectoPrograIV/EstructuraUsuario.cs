@@ -19,32 +19,32 @@ namespace ProyectoPrograIV
             setRol(_Rol);
         }
 
-        string getUsuario ()
+        public string getUsuario ()
         {
             return this.Usuario;
         }
 
-        void setUsuario(string _Usuario)
+        public void setUsuario(string _Usuario)
         {
             this.Usuario = _Usuario;
         }
 
-        string getContrasena()
+        public string getContrasena()
         {
             return this.Contrasena;
         }
 
-        void setContrasena(string _Contrasena)
+        public void setContrasena(string _Contrasena)
         {
             this.Contrasena = _Contrasena;
         }
 
-        string getRol()
+        public string getRol()
         {
             return this.Rol;
         }
 
-        void setRol(string _Rol)
+        public void setRol(string _Rol)
         {
             this.Rol = _Rol;
         }

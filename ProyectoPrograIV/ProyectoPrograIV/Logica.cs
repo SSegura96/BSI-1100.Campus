@@ -55,29 +55,6 @@ namespace ProyectoPrograIV
         }
 
         /**
-        Esta en construccion, va a Obtener un dato espesifico de la base de datos
-        */ 
-        public string ObtenerDato(string query)
-        {
-            string data = "";
-            try
-            {
-                OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
-                OleDbCommand cmd = new OleDbCommand(query, conexion);
-                conexion.Open();
-                OleDbDataReader reader = cmd.ExecuteReader();
-                data = reader.GetData(0).ToString();
-                conexion.Close();
-            }
-            catch (Exception ex)
-            {
-
-            }
-
-            return data;
-        }
-
-        /**
         Obtine la tabla con el query y el nombre de la materia dados
         */
         public DataSet obtenerTabla (string query, string nombreTabla)
@@ -90,21 +67,91 @@ namespace ProyectoPrograIV
         }
 
         /**
-        Esta en cosntruccion XD, va a analizar cada nombre de usuario con el dado en la base de datos 
+        Analiza un vector en busca de un dato retorna true en caso de que lo encuentre
+            retorna:
+            i = el indice en caso de que encuentre el nombre de usuario
+           -1 = en caso de que no lo encuentre 
         */
-        public bool validarUsuarioContrasenna(string user, string pass)
+        private int ExisteUsuario(string dato, EstructuraUsuario[] vecUsuarios)
         {
-            string dbUser = "RKoch3196";
-            string dbPass = "rk001";
+            for(int i = 0;i<vecUsuarios.Length;i++)
+            {
+                if (vecUsuarios[i].getUsuario().Equals(dato))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        
+        private string[] LlenarVector (char dato)
+        {
+            string[] vector = new string[10];
 
-            if (user.Equals(dbUser) && dbPass.Equals(pass))
+            return vector;
+        }
+
+        private EstructuraUsuario[] LlenarVectorUsuarios()
+        {
+            string query = "Select * from Usuarios";
+            EstructuraUsuario[] vecUsuarios;
+            OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
+            OleDbCommand cmd = new OleDbCommand(query, conexion);
+            conexion.Open();
+            OleDbDataReader reader = cmd.ExecuteReader();
+            int tam = (reader.FieldCount)+2;
+            vecUsuarios = new EstructuraUsuario[tam];
+            int i = 0;
+            while (reader.Read())
             {
-                return true;
+                string usuario = reader["NombreUsuario"].ToString();
+                string contrasenna = reader["Contrasena"].ToString();
+                string rol = reader["Rol"].ToString();
+                vecUsuarios[i] = new EstructuraUsuario(usuario, contrasenna, rol);
+                i++;
+            }        
+            conexion.Close();
+            return vecUsuarios;
+        }
+
+        /**
+        Valida si el usuario ingresado en el texbox y el del la base datos es el mismo
+            retorna:
+            1 = si el usuario y la contraseña son validos
+            0 = si son invalidos
+           -1 = si el usuario no existe
+           -2 = si el usurio no es Administrador
+        */
+        public int validarUsuarioContrasenna(string user, string pass, int tipo)
+        {
+            EstructuraUsuario[]  vecUsuarios = LlenarVectorUsuarios();// crea un vector con el objecto EstructuraUsuario que contine Usuario,Contrasenna,Rol
+            int indice = ExisteUsuario(user, vecUsuarios); // ademas de validar que el usuario exista devuelve el indice donde se encuentra
+            if ( indice != -1)
+            { 
+                string dbUser = vecUsuarios[indice].getUsuario(); // se obtiene el usuario
+                string dbPass = vecUsuarios[indice].getContrasena();// se obtiene la contraseña 
+                string dbRol = vecUsuarios[indice].getRol();
+
+                if (tipo == 1)
+                {
+                    if(!dbRol.Equals("Administrador"))
+                    {
+                        return -2;
+                    }
+                }
+
+                if (user.Equals(dbUser) && dbPass.Equals(pass)) // valida que el usuario y la contraseña sean los mismos que los ingresados
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+
             }
-            else
-            {
-                return false;
-            }
+            return -1;
+
         }
     }
 }

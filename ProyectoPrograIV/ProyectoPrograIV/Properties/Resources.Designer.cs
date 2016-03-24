@@ -73,9 +73,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BaseWallpaper {
+        internal static System.Drawing.Bitmap BaseAdministrador {
             get {
-                object obj = ResourceManager.GetObject("BaseWallpaper", resourceCulture);
+                object obj = ResourceManager.GetObject("BaseAdministrador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnAcceder {
+        internal static System.Drawing.Bitmap BaseContrasena {
             get {
-                object obj = ResourceManager.GetObject("btnAcceder", resourceCulture);
+                object obj = ResourceManager.GetObject("BaseContrasena", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnCerrar {
+        internal static System.Drawing.Bitmap btn_A_Acceder {
             get {
-                object obj = ResourceManager.GetObject("btnCerrar", resourceCulture);
+                object obj = ResourceManager.GetObject("btn-A-Acceder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,39 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnCerrar1 {
+        internal static System.Drawing.Bitmap btn_A_Atras {
             get {
-                object obj = ResourceManager.GetObject("btnCerrar1", resourceCulture);
+                object obj = ResourceManager.GetObject("btn-A-Atras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_E_Acceder {
+            get {
+                object obj = ResourceManager.GetObject("btn-E-Acceder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_E_Cerrar {
+            get {
+                object obj = ResourceManager.GetObject("btn-E-Cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_E_Registarse {
+            get {
+                object obj = ResourceManager.GetObject("btn-E-Registarse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,16 +146,6 @@ namespace ProyectoPrograIV.Properties {
         internal static System.Drawing.Bitmap btnInfo {
             get {
                 object obj = ResourceManager.GetObject("btnInfo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnRegistarse {
-            get {
-                object obj = ResourceManager.GetObject("btnRegistarse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +263,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Over_btnAcceder {
+        internal static System.Drawing.Bitmap Over_btn_A_Acceder {
             get {
-                object obj = ResourceManager.GetObject("Over_btnAcceder", resourceCulture);
+                object obj = ResourceManager.GetObject("Over_btn-A-Acceder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +273,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Over_btnCerrar {
+        internal static System.Drawing.Bitmap Over_btn_A_Atras {
             get {
-                object obj = ResourceManager.GetObject("Over_btnCerrar", resourceCulture);
+                object obj = ResourceManager.GetObject("Over_btn-A-Atras", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +283,9 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Over_btnInfo {
+        internal static System.Drawing.Bitmap Over_btn_A_Info {
             get {
-                object obj = ResourceManager.GetObject("Over_btnInfo", resourceCulture);
+                object obj = ResourceManager.GetObject("Over_btn-A-Info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +293,39 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Over_btnRegistarse {
+        internal static System.Drawing.Bitmap Over_btn_E_Acceder {
             get {
-                object obj = ResourceManager.GetObject("Over_btnRegistarse", resourceCulture);
+                object obj = ResourceManager.GetObject("Over_btn-E-Acceder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btn_E_Cerrar {
+            get {
+                object obj = ResourceManager.GetObject("Over_btn-E-Cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btn_E_Info {
+            get {
+                object obj = ResourceManager.GetObject("Over_btn-E-Info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btn_E_Registarse {
+            get {
+                object obj = ResourceManager.GetObject("Over_btn-E-Registarse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
