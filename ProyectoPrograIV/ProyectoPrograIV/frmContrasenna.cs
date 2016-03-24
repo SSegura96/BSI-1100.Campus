@@ -32,16 +32,16 @@ namespace ProyectoPrograIV
 
         public void cambiarEstado()
         {
-            if(getTipo()==0)
-            {
-                btnRegistrarse.Show();
-                btnCerrar.Text = "Cerrar";
-            }
-            else
-            {
-                btnRegistrarse.Hide();
-                btnCerrar.Text = "Atras";
-            }
+            //if(getTipo()==0)
+            //{
+            //    btnRegistrarse.Show();
+            //    btnCerrar.Text = "Cerrar";
+            //}
+            //else
+            //{
+            //    btnRegistrarse.Hide();
+            //    btnCerrar.Text = "Atras";
+            //}
         }
 
         /**
@@ -110,6 +110,51 @@ namespace ProyectoPrograIV
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PbCerrar_MouseHover(object sender, EventArgs e)
+        {
+            PbCerrar.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btnCerrar;
+        }
+
+        private void PbCerrar_MouseLeave(object sender, EventArgs e)
+        {
+            PbCerrar.Image = (Image)ProyectoPrograIV.Properties.Resources.btnCerrar;
+        }
+
+        private void PbRegistarse_MouseHover(object sender, EventArgs e)
+        {
+            PbRegistarse.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btnRegistarse;
+        }
+
+        private void PbRegistarse_MouseLeave(object sender, EventArgs e)
+        {
+            PbRegistarse.Image = (Image)ProyectoPrograIV.Properties.Resources.btnRegistarse;
+        }
+
+        private void PbAcceder_MouseHover(object sender, EventArgs e)
+        {
+            PbAcceder.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btnAcceder;
+        }
+
+        private void PbAcceder_MouseLeave(object sender, EventArgs e)
+        {
+            PbAcceder.Image = (Image)ProyectoPrograIV.Properties.Resources.btnAcceder;
+        }
+
+        private void PbInfo_MouseHover(object sender, EventArgs e)
+        {
+            PbInfo.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btnInfo;
+        }
+
+        private void PbInfo_MouseLeave(object sender, EventArgs e)
+        {
+            PbInfo.Image = (Image)ProyectoPrograIV.Properties.Resources.btnInfo;
         }
     }
 }

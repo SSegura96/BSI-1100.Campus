@@ -73,6 +73,66 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaseWallpaper {
+            get {
+                object obj = ResourceManager.GetObject("BaseWallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnAcceder {
+            get {
+                object obj = ResourceManager.GetObject("btnAcceder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCerrar {
+            get {
+                object obj = ResourceManager.GetObject("btnCerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCerrar1 {
+            get {
+                object obj = ResourceManager.GetObject("btnCerrar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnInfo {
+            get {
+                object obj = ResourceManager.GetObject("btnInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnRegistarse {
+            get {
+                object obj = ResourceManager.GetObject("btnRegistarse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CienciasNaturales {
             get {
                 object obj = ResourceManager.GetObject("CienciasNaturales", resourceCulture);
@@ -176,6 +236,46 @@ namespace ProyectoPrograIV.Properties {
         internal static System.Drawing.Bitmap Matematicas {
             get {
                 object obj = ResourceManager.GetObject("Matematicas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btnAcceder {
+            get {
+                object obj = ResourceManager.GetObject("Over_btnAcceder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btnCerrar {
+            get {
+                object obj = ResourceManager.GetObject("Over_btnCerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btnInfo {
+            get {
+                object obj = ResourceManager.GetObject("Over_btnInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Over_btnRegistarse {
+            get {
+                object obj = ResourceManager.GetObject("Over_btnRegistarse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

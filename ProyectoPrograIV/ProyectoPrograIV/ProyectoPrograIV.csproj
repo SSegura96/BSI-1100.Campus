@@ -162,6 +162,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="frmVerBD_MateriasAdmin.resx">
       <DependentUpon>frmVerBD_MateriasAdmin.cs</DependentUpon>
@@ -193,6 +194,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseWallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAcceder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnInfo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRegistarse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btnAcceder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btnCerrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btnInfo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btnRegistarse1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
