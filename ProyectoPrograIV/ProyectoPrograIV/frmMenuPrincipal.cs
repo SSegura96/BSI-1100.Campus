@@ -12,15 +12,26 @@ namespace ProyectoPrograIV
 {
     public partial class frmMenuPrincipal : Form
     {
+        private string Usuario = "";
         public frmMenuPrincipal()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
+        public string getUsuario ()
+        {
+            return this.Usuario;
+        }
+
+        public void setUsuario (string _usuario)
+        {
+            this.Usuario = _usuario;
+        }
+
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-
+            LbUsuario.Text = getUsuario();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -54,6 +65,103 @@ namespace ProyectoPrograIV
         private void button9_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PbSalir_Click(object sender, EventArgs e)
+        {
+            frmContrasenna pass = new frmContrasenna();
+            pass.Show();
+            this.Hide();
+        }
+
+        private void PbHora_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PbProfesores_MouseHover(object sender, EventArgs e)
+        {
+            PbProfesores.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Profesores;
+        }
+
+        private void PbProfesores_MouseLeave(object sender, EventArgs e)
+        {
+            PbProfesores.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Profesores;
+        }
+
+        private void PbMaterias_MouseHover(object sender, EventArgs e)
+        {
+            PbMaterias.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Materias;
+        }
+
+        private void PbMaterias_MouseLeave(object sender, EventArgs e)
+        {
+            PbMaterias.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Materias; 
+        }
+
+        private void PbUsuario_MouseHover(object sender, EventArgs e)
+        {
+            PbUsuario.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Usuario; 
+        }
+
+        private void PbUsuario_MouseLeave(object sender, EventArgs e)
+        {
+            PbUsuario.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Usuario;
+        }
+
+        private void PbMatricular_MouseHover(object sender, EventArgs e)
+        {
+            PbMatricular.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Matricular; 
+        }
+
+        private void PbMatricular_MouseLeave(object sender, EventArgs e)
+        {
+            PbMatricular.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Matricular; 
+        }
+
+        private void PbSalir_MouseHover(object sender, EventArgs e)
+        {
+            PbSalir.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Salir; 
+        }
+
+        private void PbSalir_MouseLeave(object sender, EventArgs e)
+        {
+            PbSalir.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Salir;
+        }
+
+        private void PbEstudiantes_MouseHover(object sender, EventArgs e)
+        {
+            PbEstudiantes.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Estudiantes1;
+        }
+
+        private void PbEstudiantes_MouseLeave(object sender, EventArgs e)
+        {
+            PbEstudiantes.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Estudiantes; 
+        }
+
+        private void PbGrupos_MouseHover(object sender, EventArgs e)
+        {
+            PbGrupos.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Grupos; 
+        }
+
+        private void PbGrupos_MouseLeave(object sender, EventArgs e)
+        {
+            PbGrupos.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Grupos; 
+        }
+
+        private void PbNotas_MouseHover(object sender, EventArgs e)
+        {
+            PbNotas.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Notas;
+        }
+
+        private void PbNotas_MouseLeave(object sender, EventArgs e)
+        {
+            PbNotas.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Notas;
         }
     }
 }

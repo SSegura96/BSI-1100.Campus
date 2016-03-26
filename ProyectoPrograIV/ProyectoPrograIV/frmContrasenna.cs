@@ -68,6 +68,7 @@ namespace ProyectoPrograIV
                 if(getTipo() == 0)
                 {
                     frmMenuPrincipal mp = new frmMenuPrincipal();
+                    mp.setUsuario(txtUsuario.Text);
                     mp.Show();
                 }
                 else
@@ -177,7 +178,7 @@ namespace ProyectoPrograIV
 
         private void PbAcceder_Click(object sender, EventArgs e)
         {
-           validarAcceder();
+            validarAcceder();
         }
 
         private void PbRegistarse_Click(object sender, EventArgs e)

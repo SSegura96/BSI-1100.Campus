@@ -108,12 +108,6 @@
     <Compile Include="frmAgregarMateriasAdmin.Designer.cs">
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMatricular.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMatricular.Designer.cs">
-      <DependentUpon>frmMatricular.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMostrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMateriasAdmin.resx">
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMatricular.resx">
-      <DependentUpon>frmMatricular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
@@ -325,6 +316,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Estudiantes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Grupos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Hora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Materias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Matricular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Notas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Profesores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Grupos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Materias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Matricular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Notas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Profesores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseMenuPrincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Estudiantes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
