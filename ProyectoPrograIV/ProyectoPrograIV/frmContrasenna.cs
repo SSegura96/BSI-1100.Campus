@@ -190,5 +190,10 @@ namespace ProyectoPrograIV
         {
             MessageBox.Show("La modalidad de cambio de contraseña sigue en contruccion", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void frmContrasenna_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

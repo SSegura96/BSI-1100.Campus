@@ -82,7 +82,7 @@
             // 
             // PbAcceder
             // 
-            this.PbAcceder.Image = global::ProyectoPrograIV.Properties.Resources.btn_E_Acceder;
+            this.PbAcceder.Image = ((System.Drawing.Image)(resources.GetObject("PbAcceder.Image")));
             this.PbAcceder.Location = new System.Drawing.Point(363, 384);
             this.PbAcceder.Name = "PbAcceder";
             this.PbAcceder.Size = new System.Drawing.Size(93, 33);
@@ -94,7 +94,7 @@
             // 
             // PbRegistarse
             // 
-            this.PbRegistarse.Image = global::ProyectoPrograIV.Properties.Resources.btn_E_Registarse;
+            this.PbRegistarse.Image = ((System.Drawing.Image)(resources.GetObject("PbRegistarse.Image")));
             this.PbRegistarse.Location = new System.Drawing.Point(207, 385);
             this.PbRegistarse.Name = "PbRegistarse";
             this.PbRegistarse.Size = new System.Drawing.Size(105, 33);
@@ -106,7 +106,7 @@
             // 
             // PbCerrar
             // 
-            this.PbCerrar.Image = global::ProyectoPrograIV.Properties.Resources.btn_E_Cerrar;
+            this.PbCerrar.Image = ((System.Drawing.Image)(resources.GetObject("PbCerrar.Image")));
             this.PbCerrar.Location = new System.Drawing.Point(58, 384);
             this.PbCerrar.Name = "PbCerrar";
             this.PbCerrar.Size = new System.Drawing.Size(94, 33);
@@ -118,10 +118,10 @@
             // 
             // Wallpaper
             // 
-            this.Wallpaper.Image = global::ProyectoPrograIV.Properties.Resources.BaseContrasena;
+            this.Wallpaper.Image = ((System.Drawing.Image)(resources.GetObject("Wallpaper.Image")));
             this.Wallpaper.Location = new System.Drawing.Point(-1, 0);
             this.Wallpaper.Name = "Wallpaper";
-            this.Wallpaper.Size = new System.Drawing.Size(514, 461);
+            this.Wallpaper.Size = new System.Drawing.Size(513, 461);
             this.Wallpaper.TabIndex = 9;
             this.Wallpaper.TabStop = false;
             // 
@@ -129,6 +129,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProyectoPrograIV.Properties.Resources.Wallpaper;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(510, 458);
             this.Controls.Add(this.PbInfo);
             this.Controls.Add(this.PbAcceder);
@@ -137,9 +139,10 @@
             this.Controls.Add(this.txtContrasenna);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.Wallpaper);
-            this.MaximizeBox = false;
+            this.DoubleBuffered = true;
             this.Name = "frmContrasenna";
             this.Text = "Inicio de sesion Estandar";
+            this.Load += new System.EventHandler(this.frmContrasenna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbAcceder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbRegistarse)).EndInit();
