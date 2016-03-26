@@ -118,26 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ArtesIndustriales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArtesIndustriales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BaseAdministrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseAdministrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Español" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Español.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BaseContrasena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaseContrasena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn-A-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-A-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EducacionMusical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EducacionMusical.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Over_btn-E-Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Over_btn-E-Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn-A-Atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-A-Atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn-E-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn-E-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn-A-Atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn-A-Atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn-E-Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-E-Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn-E-Registarse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn-E-Registarse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CienciasNaturales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CienciasNaturales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Computacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Computacion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,23 +154,26 @@
   <data name="EducacionArtistica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EducacionArtistica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Over_btn-E-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Over_btn-E-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EducacionDelHogar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EducacionDelHogar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CienciasNaturales" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CienciasNaturales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EducacionFisica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EducacionFisica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Over_btn-E-Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Over_btn-E-Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EducacionMusical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EducacionMusical.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Over_btn-A-Atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Over_btn-A-Atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EducacionReligiosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EducacionReligiosa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Español" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Español.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HistoriaYGeografia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HistoriaYGeografia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BaseContrasena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BaseContrasena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ingles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ingles.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Matematicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Matematicas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,40 +181,25 @@
   <data name="Over_btn-A-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Over_btn-A-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Over_btn-A-Atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Over_btn-A-Atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Over_btn-A-Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Over_btn-A-Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ArtesIndustriales" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArtesIndustriales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Over_btn-E-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Over_btn-E-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EducacionReligiosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EducacionReligiosa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Over_btn-E-Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Over_btn-E-Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn-E-Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn-E-Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn-A-Acceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn-A-Acceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="verBD_Estandar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\verBD_Estandar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ingles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ingles.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn-E-Registarse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn-E-Registarse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Over_btn-E-Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Over_btn-E-Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Over_btn-E-Registarse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Over_btn-E-Registarse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EducacionDelHogar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EducacionDelHogar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EducacionFisica" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EducacionFisica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="verBD_Estandar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\verBD_Estandar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
