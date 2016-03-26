@@ -46,6 +46,7 @@
             this.txtGrupo.Location = new System.Drawing.Point(81, 111);
             this.txtGrupo.MaxLength = 2;
             this.txtGrupo.Name = "txtGrupo";
+            this.txtGrupo.ReadOnly = true;
             this.txtGrupo.Size = new System.Drawing.Size(306, 23);
             this.txtGrupo.TabIndex = 17;
             this.txtGrupo.TextChanged += new System.EventHandler(this.txtGrupo_TextChanged);
@@ -65,8 +66,10 @@
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(81, 82);
             this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.ReadOnly = true;
             this.txtCorreo.Size = new System.Drawing.Size(306, 23);
             this.txtCorreo.TabIndex = 15;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // lblCorreo
             // 
@@ -85,6 +88,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(306, 23);
             this.txtNombre.TabIndex = 13;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblNombre
             // 
