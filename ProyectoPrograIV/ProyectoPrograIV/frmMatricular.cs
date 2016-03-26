@@ -109,5 +109,13 @@ namespace ProyectoPrograIV
                 txtCorreo.ReadOnly = true;
             }//fin else de validacion
         }//fin evento txtNombre_TextChanged(object sender, EventArgs e)
+
+        //este metodo hace que se vaya al menu principal
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal principal = new frmMenuPrincipal();
+            this.Close();//se cierra el form actual
+            principal.Show();//se muestra el form del menu principal
+        }
     }//fin class
 }//fin namespace

@@ -38,6 +38,7 @@
             this.txtCarne = new System.Windows.Forms.TextBox();
             this.lblCarne = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtGrupo
@@ -103,7 +104,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(142, 159);
+            this.btnAgregar.Location = new System.Drawing.Point(103, 159);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(72, 28);
             this.btnAgregar.TabIndex = 11;
@@ -133,7 +134,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(238, 159);
+            this.btnLimpiar.Location = new System.Drawing.Point(196, 159);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(72, 28);
             this.btnLimpiar.TabIndex = 18;
@@ -141,11 +142,23 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(286, 159);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(72, 28);
+            this.btnAtras.TabIndex = 19;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
             // frmMatricular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 199);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtGrupo);
             this.Controls.Add(this.lblGrupo);
@@ -175,5 +188,6 @@
         private System.Windows.Forms.TextBox txtCarne;
         private System.Windows.Forms.Label lblCarne;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnAtras;
     }
 }
