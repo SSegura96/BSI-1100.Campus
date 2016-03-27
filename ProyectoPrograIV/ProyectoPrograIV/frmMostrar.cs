@@ -109,10 +109,10 @@ namespace ProyectoPrograIV
                     break;
 
                 case "Grupos":
-                    dataGridView1.Columns[0].HeaderText = "Codigo Materia";
-                    dataGridView1.Columns[1].HeaderText = "Nombre Materia";
-                    dataGridView1.Columns[2].HeaderText = "Nombre Profesor";
-                    dataGridView1.Columns[3].HeaderText = "Nombre Estudiante";
+                    dataGridView1.Columns[0].HeaderText = "Codigo Grupos";
+                    dataGridView1.Columns[1].HeaderText = "Codigo Materia";
+                    dataGridView1.Columns[2].HeaderText = "Codigo Profesor";
+                    dataGridView1.Columns[3].HeaderText = "Codigo Estudiante";
                     break;
 
                 case "Materias":
@@ -123,7 +123,7 @@ namespace ProyectoPrograIV
 
                 case "Notas":
                     dataGridView1.Columns[0].HeaderText = "Codigo Materia";
-                    dataGridView1.Columns[1].HeaderText = "Nombre Estudiante";
+                    dataGridView1.Columns[1].HeaderText = "Carne Estudiante";
                     dataGridView1.Columns[2].HeaderText = "Nota";
                     break;
 
