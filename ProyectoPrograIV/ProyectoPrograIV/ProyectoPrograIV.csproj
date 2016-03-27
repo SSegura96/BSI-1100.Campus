@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstructuraAlumno.cs" />
     <Compile Include="frmAgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +114,12 @@
     </Compile>
     <Compile Include="frmMostrar.Designer.cs">
       <DependentUpon>frmMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotas.Designer.cs">
+      <DependentUpon>frmNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="Logica.cs" />
     <Compile Include="frmMenuPrincipal.cs">
@@ -147,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMostrar.resx">
       <DependentUpon>frmMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotas.resx">
+      <DependentUpon>frmNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVer_MateriasEstandar.resx">
       <DependentUpon>frmVer_MateriasEstandar.cs</DependentUpon>

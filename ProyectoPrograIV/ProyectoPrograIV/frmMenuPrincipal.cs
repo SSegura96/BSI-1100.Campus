@@ -192,14 +192,23 @@ namespace ProyectoPrograIV
 
         private void PbGrupos_Click(object sender, EventArgs e)
         {
+            string query = "SELECT  g.CodGrupo, m.CodMateria, p.CodProfesor, e.Carne"
+                        + " FROM Materias AS m, Profesores AS p, Estudiantes AS e, Grupos AS g"
+                        + " WHERE g.Materia = m.CodMateria"
+                        + " AND g.Profesor = p.CodProfesor"
+                        + "AND g.Estudiante = e.Carne;";
+
             frmMostrar mostrar = new frmMostrar('G');
+            mostrar.setQuery(query);
             mostrar.Show();
             this.Hide();
         }
 
         private void PbNotas_Click(object sender, EventArgs e)
         {
-
+            frmNotas notas = new frmNotas();
+            notas.Show();
+            this.Hide();
         }
     }
 }

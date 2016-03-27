@@ -143,5 +143,53 @@ namespace ProyectoPrograIV
             return -1;
 
         }
+
+        /**
+        Busca el alumno que tenga el carne, en caso de no encontrarlo devuelve NULL
+            Parametros: 
+                - String id: el carne introducido por el usuario
+                - List carnets: La lista de estudiantes
+        */
+        private string buscarAlumno(string id,List <EstructuraAlumno> carnets)
+        {
+            for(int i = 0;i < carnets.Count();i++)
+            {
+                if(carnets[i].getCarne().Equals(id))
+                {
+                    return carnets[i].getNombre();
+                }
+            }
+            return null;
+        }
+
+        /**
+        Realiza la coneccion con la base de datos obtine los estudiantes y valida que el caenet introducido corresponda a un usuario
+        Parametros: el carnet introducido : string id
+        */
+        public string comprobarCarne(string id)
+        {
+            string query = "Select Carne, Nombre from Estudiantes";
+            List<EstructuraAlumno> listaCarnets = new List<EstructuraAlumno>();// lista donde guarda el estudiante
+            OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
+            OleDbCommand cmd = new OleDbCommand(query, conexion);
+            conexion.Open();
+            OleDbDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                string carne = reader["Carne"].ToString();
+                string nombre = reader["Nombre"].ToString();
+                listaCarnets.Add(new EstructuraAlumno (carne,nombre));
+            }//fin del while
+            string alumno = buscarAlumno(id,listaCarnets);
+            //si el alumno no existe alumno == NULL
+            if (alumno == null)
+            {
+                return "El alumno no existe";
+            }
+            else
+            {
+                return alumno;
+            }
+        }
     }
 }

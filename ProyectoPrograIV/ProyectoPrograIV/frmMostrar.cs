@@ -145,7 +145,7 @@ namespace ProyectoPrograIV
 
         private void frmMostrar_Load(object sender, EventArgs e)
         {
-            if (getTipo() != ' ')
+            if (getTipo() != 'N' || getTipo() != 'G')
             {
                 generarQuery();
             }
