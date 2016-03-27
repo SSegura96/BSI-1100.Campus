@@ -33,9 +33,9 @@ namespace ProyectoPrograIV
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            frmVerBD_MateriasAdmin materiasAdmin = new frmVerBD_MateriasAdmin();
-            this.Close();
-            materiasAdmin.Show();
+            //frmVerBD_MateriasAdmin materiasAdmin = new frmVerBD_MateriasAdmin();
+            //this.Close();
+            //materiasAdmin.Show();
         }//fin evento void btnAtras_Click(object sender, EventArgs e)
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
