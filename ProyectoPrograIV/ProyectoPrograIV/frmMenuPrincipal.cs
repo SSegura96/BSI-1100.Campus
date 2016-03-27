@@ -136,7 +136,7 @@ namespace ProyectoPrograIV
 
         private void PbEstudiantes_MouseHover(object sender, EventArgs e)
         {
-            PbEstudiantes.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Estudiantes1;
+            PbEstudiantes.Image = (Image)ProyectoPrograIV.Properties.Resources.Over_btn_E_Estudiantes;
         }
 
         private void PbEstudiantes_MouseLeave(object sender, EventArgs e)

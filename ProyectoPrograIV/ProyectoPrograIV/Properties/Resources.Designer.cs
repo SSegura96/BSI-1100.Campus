@@ -93,16 +93,6 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap baseMenuPrincipal {
-            get {
-                object obj = ResourceManager.GetObject("baseMenuPrincipal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap btn_A_Acceder {
             get {
                 object obj = ResourceManager.GetObject("btn-A-Acceder", resourceCulture);
@@ -423,16 +413,6 @@ namespace ProyectoPrograIV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Over_btn_E_Estudiantes1 {
-            get {
-                object obj = ResourceManager.GetObject("Over_btn-E-Estudiantes1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Over_btn_E_Grupos {
             get {
                 object obj = ResourceManager.GetObject("Over_btn-E-Grupos", resourceCulture);
@@ -526,16 +506,6 @@ namespace ProyectoPrograIV.Properties {
         internal static System.Drawing.Bitmap verBD_Estandar {
             get {
                 object obj = ResourceManager.GetObject("verBD_Estandar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Wallpaper {
-            get {
-                object obj = ResourceManager.GetObject("Wallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
