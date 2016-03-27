@@ -67,6 +67,7 @@
             this.PbMaterias.Size = new System.Drawing.Size(168, 163);
             this.PbMaterias.TabIndex = 1;
             this.PbMaterias.TabStop = false;
+            this.PbMaterias.Click += new System.EventHandler(this.PbMaterias_Click);
             this.PbMaterias.MouseLeave += new System.EventHandler(this.PbMaterias_MouseLeave);
             this.PbMaterias.MouseHover += new System.EventHandler(this.PbMaterias_MouseHover);
             // 
@@ -78,6 +79,7 @@
             this.PbProfesores.Size = new System.Drawing.Size(164, 164);
             this.PbProfesores.TabIndex = 2;
             this.PbProfesores.TabStop = false;
+            this.PbProfesores.Click += new System.EventHandler(this.PbProfesores_Click);
             this.PbProfesores.MouseLeave += new System.EventHandler(this.PbProfesores_MouseLeave);
             this.PbProfesores.MouseHover += new System.EventHandler(this.PbProfesores_MouseHover);
             // 
@@ -100,6 +102,7 @@
             this.PbMatricular.Size = new System.Drawing.Size(335, 167);
             this.PbMatricular.TabIndex = 4;
             this.PbMatricular.TabStop = false;
+            this.PbMatricular.Click += new System.EventHandler(this.PbMatricular_Click);
             this.PbMatricular.MouseLeave += new System.EventHandler(this.PbMatricular_MouseLeave);
             this.PbMatricular.MouseHover += new System.EventHandler(this.PbMatricular_MouseHover);
             // 
@@ -123,6 +126,7 @@
             this.PbEstudiantes.Size = new System.Drawing.Size(167, 169);
             this.PbEstudiantes.TabIndex = 6;
             this.PbEstudiantes.TabStop = false;
+            this.PbEstudiantes.Click += new System.EventHandler(this.PbEstudiantes_Click);
             this.PbEstudiantes.MouseLeave += new System.EventHandler(this.PbEstudiantes_MouseLeave);
             this.PbEstudiantes.MouseHover += new System.EventHandler(this.PbEstudiantes_MouseHover);
             // 
@@ -134,6 +138,7 @@
             this.PbGrupos.Size = new System.Drawing.Size(164, 169);
             this.PbGrupos.TabIndex = 7;
             this.PbGrupos.TabStop = false;
+            this.PbGrupos.Click += new System.EventHandler(this.PbGrupos_Click);
             this.PbGrupos.MouseLeave += new System.EventHandler(this.PbGrupos_MouseLeave);
             this.PbGrupos.MouseHover += new System.EventHandler(this.PbGrupos_MouseHover);
             // 
@@ -145,6 +150,7 @@
             this.PbNotas.Size = new System.Drawing.Size(339, 170);
             this.PbNotas.TabIndex = 8;
             this.PbNotas.TabStop = false;
+            this.PbNotas.Click += new System.EventHandler(this.PbNotas_Click);
             this.PbNotas.MouseLeave += new System.EventHandler(this.PbNotas_MouseLeave);
             this.PbNotas.MouseHover += new System.EventHandler(this.PbNotas_MouseHover);
             // 

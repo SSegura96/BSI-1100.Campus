@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace ProyectoPrograIV
 {
@@ -72,46 +73,35 @@ namespace ProyectoPrograIV
             i = el indice en caso de que encuentre el nombre de usuario
            -1 = en caso de que no lo encuentre 
         */
-        private int ExisteUsuario(string dato, EstructuraUsuario[] vecUsuarios)
+        private int ExisteUsuario(string dato, List <EstructuraUsuario> listaUsuarios)
         {
-            for(int i = 0;i<vecUsuarios.Length;i++)
+            for(int i = 0;i<listaUsuarios.Count;i++)
             {
-                if (vecUsuarios[i].getUsuario().Equals(dato))
+                if (listaUsuarios[i].getUsuario().Equals(dato))
                 {
                     return i;
                 }
             }
             return -1;
         }
-        
-        private string[] LlenarVector (char dato)
-        {
-            string[] vector = new string[10];
 
-            return vector;
-        }
-
-        private EstructuraUsuario[] LlenarVectorUsuarios()
+        private List <EstructuraUsuario> LlenarVectorUsuarios()
         {
             string query = "Select * from Usuarios";
-            EstructuraUsuario[] vecUsuarios;
+            List <EstructuraUsuario> listaUsuarios = new List <EstructuraUsuario> ();
             OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");
             OleDbCommand cmd = new OleDbCommand(query, conexion);
             conexion.Open();
             OleDbDataReader reader = cmd.ExecuteReader();
-            int tam = (reader.FieldCount)+2;
-            vecUsuarios = new EstructuraUsuario[tam];
-            int i = 0;
             while (reader.Read())
             {
                 string usuario = reader["NombreUsuario"].ToString();
                 string contrasenna = reader["Contrasena"].ToString();
                 string rol = reader["Rol"].ToString();
-                vecUsuarios[i] = new EstructuraUsuario(usuario, contrasenna, rol);
-                i++;
+                listaUsuarios.Add(new EstructuraUsuario(usuario, contrasenna, rol));
             }        
             conexion.Close();
-            return vecUsuarios;
+            return listaUsuarios;
         }
 
         /**
@@ -124,13 +114,13 @@ namespace ProyectoPrograIV
         */
         public int validarUsuarioContrasenna(string user, string pass, int tipo)
         {
-            EstructuraUsuario[]  vecUsuarios = LlenarVectorUsuarios();// crea un vector con el objecto EstructuraUsuario que contine Usuario,Contrasenna,Rol
-            int indice = ExisteUsuario(user, vecUsuarios); // ademas de validar que el usuario exista devuelve el indice donde se encuentra
+            List <EstructuraUsuario> listaUsuarios = LlenarVectorUsuarios();// crea un vector con el objecto EstructuraUsuario que contine Usuario,Contrasenna,Rol
+            int indice = ExisteUsuario(user, listaUsuarios); // ademas de validar que el usuario exista devuelve el indice donde se encuentra
             if ( indice != -1)
             { 
-                string dbUser = vecUsuarios[indice].getUsuario(); // se obtiene el usuario
-                string dbPass = vecUsuarios[indice].getContrasena();// se obtiene la contraseña 
-                string dbRol = vecUsuarios[indice].getRol();
+                string dbUser = listaUsuarios[indice].getUsuario(); // se obtiene el usuario
+                string dbPass = listaUsuarios[indice].getContrasena();// se obtiene la contraseña 
+                string dbRol = listaUsuarios[indice].getRol();
 
                 if (tipo == 1)
                 {

@@ -65,19 +65,15 @@ namespace ProyectoPrograIV
 
                 case 'M':
                     return "Materias";
-                    break;
+                break;
 
                 case 'N':
                     return "Notas";
-                    break;
+                break;
 
                 case 'P':
                     return "Profesores";
-                    break;
-
-                case 'U':
-                    return "Usuarios";
-                    break;
+                break;
 
                 default:
                     return null;
@@ -96,8 +92,49 @@ namespace ProyectoPrograIV
             DataSet table = new DataSet(); // crea una nueva tabla para guardar lo del metodo obtener tabla
             table = lg.obtenerTabla(getQuery() , obtenerNombreTabla());
             dataGridView1.DataSource = table.Tables[0];
+            ponerHeaders(obtenerNombreTabla());
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        //pone nombre a las columnas del DataGrid
+        private void ponerHeaders(string nombreTabla)
+        {
+            switch (nombreTabla)
+            {
+                case "Estudiantes":
+                    dataGridView1.Columns[0].HeaderText = "Carne Estudiante";
+                    dataGridView1.Columns[1].HeaderText = "Nombre Estudiante";
+                    dataGridView1.Columns[2].HeaderText = "Correo Estudiante";
+                    dataGridView1.Columns[3].HeaderText = "Grupo Estudiante";
+                    break;
+
+                case "Grupos":
+                    dataGridView1.Columns[0].HeaderText = "Codigo Materia";
+                    dataGridView1.Columns[1].HeaderText = "Nombre Materia";
+                    dataGridView1.Columns[2].HeaderText = "Nombre Profesor";
+                    dataGridView1.Columns[3].HeaderText = "Nombre Estudiante";
+                    break;
+
+                case "Materias":
+                    dataGridView1.Columns[0].HeaderText = "Codigo Materia";
+                    dataGridView1.Columns[1].HeaderText = "Nombre Materia";
+                    dataGridView1.Columns[2].HeaderText = "Trimestre";
+                    break;
+
+                case "Notas":
+                    dataGridView1.Columns[0].HeaderText = "Codigo Materia";
+                    dataGridView1.Columns[1].HeaderText = "Nombre Estudiante";
+                    dataGridView1.Columns[2].HeaderText = "Nota";
+                    break;
+
+                case "Profesores":
+                    dataGridView1.Columns[0].HeaderText = "Codigo Profesor";
+                    dataGridView1.Columns[1].HeaderText = "Nombre Profesor";
+                    dataGridView1.Columns[2].HeaderText = "Correo Profesor";
+                    dataGridView1.Columns[3].HeaderText = "Telefono Profesor";
+                    break;
+            }//fin switch
+        }//fin metedo void ponerHeaders(string nombreTabla)
 
         private void button1_Click(object sender, EventArgs e)
         {

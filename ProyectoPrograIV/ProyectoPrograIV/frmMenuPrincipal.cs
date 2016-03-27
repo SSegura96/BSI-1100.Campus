@@ -163,5 +163,43 @@ namespace ProyectoPrograIV
         {
             PbNotas.Image = (Image)ProyectoPrograIV.Properties.Resources.btn_E_Notas;
         }
+
+        private void PbProfesores_Click(object sender, EventArgs e)
+        {
+            frmMostrar mostrar = new frmMostrar('P');
+            mostrar.Show();
+            this.Hide();
+        }
+
+        private void PbMaterias_Click(object sender, EventArgs e)
+        {
+            frmMostrar mostrar = new frmMostrar('M');
+            mostrar.Show();
+            this.Hide();
+        }
+
+        private void PbMatricular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PbEstudiantes_Click(object sender, EventArgs e)
+        {
+            frmMostrar mostrar = new frmMostrar('E');
+            mostrar.Show();
+            this.Hide();
+        }
+
+        private void PbGrupos_Click(object sender, EventArgs e)
+        {
+            frmMostrar mostrar = new frmMostrar('G');
+            mostrar.Show();
+            this.Hide();
+        }
+
+        private void PbNotas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
