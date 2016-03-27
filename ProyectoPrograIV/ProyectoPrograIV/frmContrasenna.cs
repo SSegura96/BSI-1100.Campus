@@ -88,7 +88,7 @@ namespace ProyectoPrograIV
                 {
                     if (resp == -1)
                     {
-                        mensaje = "El usuario que introdujo no exite";
+                        mensaje = "El usuario que introdujo no existe";
                     }
                     else
                     {
