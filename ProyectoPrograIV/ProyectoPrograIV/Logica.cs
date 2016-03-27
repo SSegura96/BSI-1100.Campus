@@ -47,7 +47,7 @@ namespace ProyectoPrograIV
                 orden.Connection.Open();
                 orden.ExecuteNonQuery();
                 orden.Connection.Close();
-                MessageBox.Show(mensaje);
+                MessageBox.Show(mensaje,"Aviso",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -191,5 +191,69 @@ namespace ProyectoPrograIV
                 return alumno;
             }
         }
+
+        /**
+        Metodo que valida un TextBox de origen numerico (que solo pueda contener numeros).
+            -Parametros:
+                TextBox text: TextBox que se desea validar
+        */
+        public bool EsTextBoxNumerico(TextBox text)
+        {
+            int num = 0;//variable para el metodo tryParse con la que se compara el TextBox
+            //Se utilza un bool para almacenar el resultado del TryParse
+            bool esNumero;
+            esNumero = int.TryParse(text.Text, out num);
+            //Se pregunta por el valor del bool
+            if (!esNumero)
+            {
+                //si el bool es 'false' se muestra un mensaje en pantalla.
+                MessageBox.Show("Error: El valor ''" + text.Text + "'' no es un valor numerico.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }//fin if
+            else
+            {
+                return true;
+            }//fin else
+        }//fin metodo bool EsTextBoxNumerico(TextBox text)
+
+        /**
+        Metodo para validar un TextBox y que el mismo no quede en blanco o vacio
+            -Parametros:
+                TextBox txtValidar: TextBox que se desea validar
+        */
+        public bool EsTextBoxVacio(TextBox txtValidar)
+        {
+            //se pregunta si el string que se pasa del textBox es null o vacio
+            if (string.IsNullOrWhiteSpace(txtValidar.Text))
+            {
+                return true;
+            }//fin if
+            else
+            {
+                return false;
+            }//fin else
+        }//fin metodo bool EsTextBoxVacio(TextBox txtValidar)
+
+        /**
+        Metodo para validar los TextBox para que no queden en blanco o vacios
+            -Paramteros:
+                TextBox txtValidar: TextBox que se desea validar
+                TextBox txtHabilitar: TextBox que se habilita despues de que el primero tenga un valor
+        */
+        public void ValidarTextBoxDobleVacio(TextBox txtValidar, TextBox txtHabilitar)
+        {
+            //se pregunta si el string que se pasa del textBox es null o vacio
+            if (string.IsNullOrWhiteSpace(txtValidar.Text))
+            {
+                //si esta null o vacio se mantiene en modo lectura
+                txtHabilitar.ReadOnly = true;
+            }//fin if
+            else
+            {
+                //si no esta vacio o null se quita el modo lectura
+                txtHabilitar.ReadOnly = false;
+            }//fin else
+        }//fin metodo ValidarTextBoxDobleVacio
+
     }
 }
