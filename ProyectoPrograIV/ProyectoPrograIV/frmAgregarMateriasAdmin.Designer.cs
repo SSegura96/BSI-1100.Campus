@@ -134,7 +134,6 @@
             this.Controls.Add(this.lblNombreMateria);
             this.Name = "frmAgregarMateriasAdmin";
             this.Text = "Materias: Agregar Materias - Administrador";
-            this.Load += new System.EventHandler(this.frmAgregarMateriasAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

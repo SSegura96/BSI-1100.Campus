@@ -85,6 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EstructuraAlumno.cs" />
+    <Compile Include="EstructuraMateria.cs" />
+    <Compile Include="EstructuraProfesor.cs" />
     <Compile Include="frmAgregarEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>

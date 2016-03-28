@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtGrupo = new System.Windows.Forms.TextBox();
-            this.lblGrupo = new System.Windows.Forms.Label();
+            this.txtSeccion = new System.Windows.Forms.TextBox();
+            this.lblSeccion = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -42,25 +42,25 @@
             this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtGrupo
+            // txtSeccion
             // 
-            this.txtGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrupo.Location = new System.Drawing.Point(87, 149);
-            this.txtGrupo.MaxLength = 3;
-            this.txtGrupo.Name = "txtGrupo";
-            this.txtGrupo.Size = new System.Drawing.Size(327, 23);
-            this.txtGrupo.TabIndex = 17;
-            this.txtGrupo.TextChanged += new System.EventHandler(this.txtGrupo_TextChanged);
+            this.txtSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeccion.Location = new System.Drawing.Point(87, 149);
+            this.txtSeccion.MaxLength = 3;
+            this.txtSeccion.Name = "txtSeccion";
+            this.txtSeccion.Size = new System.Drawing.Size(327, 23);
+            this.txtSeccion.TabIndex = 17;
+            this.txtSeccion.TextChanged += new System.EventHandler(this.txtSeccion_TextChanged);
             // 
-            // lblGrupo
+            // lblSeccion
             // 
-            this.lblGrupo.AutoSize = true;
-            this.lblGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrupo.Location = new System.Drawing.Point(29, 152);
-            this.lblGrupo.Name = "lblGrupo";
-            this.lblGrupo.Size = new System.Drawing.Size(52, 17);
-            this.lblGrupo.TabIndex = 16;
-            this.lblGrupo.Text = "Grupo:";
+            this.lblSeccion.AutoSize = true;
+            this.lblSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeccion.Location = new System.Drawing.Point(19, 152);
+            this.lblSeccion.Name = "lblSeccion";
+            this.lblSeccion.Size = new System.Drawing.Size(62, 17);
+            this.lblSeccion.TabIndex = 16;
+            this.lblSeccion.Text = "Seccion:";
             // 
             // txtCorreo
             // 
@@ -169,8 +169,8 @@
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lblInfo);
-            this.Controls.Add(this.txtGrupo);
-            this.Controls.Add(this.lblGrupo);
+            this.Controls.Add(this.txtSeccion);
+            this.Controls.Add(this.lblSeccion);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtNombre);
@@ -187,8 +187,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtGrupo;
-        private System.Windows.Forms.Label lblGrupo;
+        private System.Windows.Forms.TextBox txtSeccion;
+        private System.Windows.Forms.Label lblSeccion;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtNombre;
