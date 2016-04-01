@@ -83,7 +83,7 @@ namespace ProyectoPrograIV
             txtInfoMateria.Text = informacionMaterias[(comboItem)].ToString();
         }//fin evento void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
-        //cierra la ventana actual y muestra el menu principal
+        //cierra el form actual y muestra el menu principal
         private void btnAtras_Click(object sender, EventArgs e)
         {
             frmMenuPrincipal principal = new frmMenuPrincipal();
