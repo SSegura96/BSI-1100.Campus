@@ -117,6 +117,12 @@
     <Compile Include="frmAgregarMateriasAdmin.Designer.cs">
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMatricular_Grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatricular_Grupo.Designer.cs">
+      <DependentUpon>frmMatricular_Grupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMostrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMateriasAdmin.resx">
       <DependentUpon>frmAgregarMateriasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatricular_Grupo.resx">
+      <DependentUpon>frmMatricular_Grupo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
