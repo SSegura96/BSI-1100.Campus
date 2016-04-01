@@ -296,7 +296,7 @@ namespace ProyectoPrograIV
             string nombreMateria = listaMaterias.ElementAt(indiceComboMateria).getNombre();//se obtiene el nombre de la materia en la posicion de la lista
             codigoMateria = ObtenerCodigoMateria(nombreMateria, listaMaterias);//se usa el metodo para encontrar el codigo de la materia
 
-            //Se obtiene el codigo del profesor
+            //Se obtiene el codigo del profesores
             int indiceComboProfesor = cbxProfesores.SelectedIndex;//se crea una variable temporal para almacenar el indice del combo box Profesor
             string nombreProfesor = listaProfesores.ElementAt(indiceComboProfesor).getNombre();//se obtiene el nombre del profesor en la posicion de la lista
             codigoProfesor = ObtenerCodigoProfesor(nombreProfesor, listaProfesores);//se usa el metodo para encontrar el codigo del profesor
