@@ -57,27 +57,21 @@ namespace ProyectoPrograIV
             {
                 case 'E':
                     return "Estudiantes";
-                break;
 
                 case 'G':
                     return "Grupos";
-                break;
 
                 case 'M':
                     return "Materias";
-                break;
 
                 case 'N':
                     return "Notas";
-                break;
 
                 case 'P':
                     return "Profesores";
-                break;
 
                 default:
                     return null;
-                break;
             }
         }
 

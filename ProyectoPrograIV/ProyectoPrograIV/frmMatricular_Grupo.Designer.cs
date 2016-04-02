@@ -80,6 +80,7 @@
             // 
             // cbxProfesores
             // 
+            this.cbxProfesores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxProfesores.FormattingEnabled = true;
             this.cbxProfesores.Location = new System.Drawing.Point(83, 198);
@@ -99,6 +100,7 @@
             // 
             // cbxMaterias
             // 
+            this.cbxMaterias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMaterias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMaterias.FormattingEnabled = true;
             this.cbxMaterias.Location = new System.Drawing.Point(83, 168);
@@ -118,6 +120,7 @@
             // 
             // cbxAlumnos
             // 
+            this.cbxAlumnos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAlumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxAlumnos.FormattingEnabled = true;
             this.cbxAlumnos.Location = new System.Drawing.Point(83, 228);
@@ -193,6 +196,7 @@
             // 
             // cbxSeccion
             // 
+            this.cbxSeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSeccion.FormattingEnabled = true;
             this.cbxSeccion.Location = new System.Drawing.Point(83, 138);
@@ -202,6 +206,7 @@
             // 
             // cbxGrado
             // 
+            this.cbxGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGrado.FormattingEnabled = true;
             this.cbxGrado.Location = new System.Drawing.Point(83, 108);

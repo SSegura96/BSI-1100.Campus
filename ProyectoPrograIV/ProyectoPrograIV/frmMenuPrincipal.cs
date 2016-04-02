@@ -180,7 +180,9 @@ namespace ProyectoPrograIV
 
         private void PbMatricular_Click(object sender, EventArgs e)
         {
-
+            frmMatricular_Grupo matricular = new frmMatricular_Grupo();
+            this.Hide();
+            matricular.Show();
         }
 
         private void PbEstudiantes_Click(object sender, EventArgs e)

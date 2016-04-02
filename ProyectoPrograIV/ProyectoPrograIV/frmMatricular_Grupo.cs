@@ -17,12 +17,6 @@ namespace ProyectoPrograIV
         public frmMatricular_Grupo()
         {
             this.ActiveControl = rdBtnPrimerCiclo;//deja seleccionado este radioButton por defecto
-            //se ponen ambos comboBox en modo lectura por asi decirlo.
-            cbxGrado.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxSeccion.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxAlumnos.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxMaterias.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxProfesores.DropDownStyle = ComboBoxStyle.DropDownList;
             //Se ponen los metodos para inicializar los combo box
             llenarComboBoxEstudiantes();
             llenarComboBoxMaterias();
@@ -43,6 +37,7 @@ namespace ProyectoPrograIV
         //metodo que obtiene valores de la DB y los carga al combo box estudiantes y a su lista
         private void llenarComboBoxEstudiantes()
         {
+            cbxAlumnos.Items.Clear();
             string query = "Select Carne, Nombre from Estudiantes";//Instruccion SQL
             OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");//Conection String
             OleDbCommand cmd = new OleDbCommand(query, conexion);//Ejecuta el comando
@@ -55,6 +50,7 @@ namespace ProyectoPrograIV
                 string carne = reader["Carne"].ToString();
                 string nombre = reader["Nombre"].ToString();
                 listaEstudiantes.Add(new EstructuraAlumno(carne, nombre));
+                //Items.Add(carne + " / " + nombre);
                 cbxAlumnos.Items.Add(carne + " / " + nombre);
             }//fin del while
             conexion.Close();//Cierra la DB

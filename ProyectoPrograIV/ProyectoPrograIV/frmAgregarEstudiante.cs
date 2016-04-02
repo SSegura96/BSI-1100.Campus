@@ -15,11 +15,10 @@ namespace ProyectoPrograIV
     {
         public frmAgregarEstudiante()
         {
-            InitializeComponent();
             this.ActiveControl = txtNombre;//pone el foco en el textbox especificado.
             this.StartPosition = FormStartPosition.CenterScreen;//pone el form en el centro.
             txtGrupo.MaxLength = 3;//pone un limite de caracteres al textBox
-            //se instancian en modo lectura los tres text Box
+            //se instancian en modo lectura tres textBox
             txtCarne.ReadOnly = true;
             txtCorreo.ReadOnly = true;
             txtGrupo.ReadOnly = true;
@@ -63,16 +62,7 @@ namespace ProyectoPrograIV
             txtCarne.Text = generarCarne();
         }//fin evento txtGrupo_TextChanged
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            //se limpian los textBox
-            txtNombre.Text = "";
-            txtCorreo.Text = "";
-            txtGrupo.Text = "";
-            txtCarne.Text = "";
-            this.ActiveControl = txtNombre;//deja el cursor en text box especificado
-        }//fin evento btnLimpiar_Click
-
+        //Se guarda el estudiante con la informacion digitada por el usuario
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             //Se valida que txtNombre no este vacio
@@ -97,5 +87,23 @@ namespace ProyectoPrograIV
                 MessageBox.Show("Por favor llenar todos los campos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }//fin else txtNombre
         }//fin evento btnAgregar_Click
-    }
-}
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            //se limpian los textBox
+            txtNombre.Text = "";
+            txtCorreo.Text = "";
+            txtGrupo.Text = "";
+            txtCarne.Text = "";
+            this.ActiveControl = txtNombre; //pone el focus en text box definido
+        }//fin evento btnLimpiar_Click
+
+        //Evento para volver a mostrar la DB de estudiantes
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmMostrar estudiantes = new frmMostrar('E');
+            this.Close();
+            estudiantes.Show();
+        }//fin evento btnVolver_Click
+    }//fin class
+}//fin namespace
