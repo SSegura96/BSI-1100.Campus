@@ -316,5 +316,12 @@ namespace ProyectoPrograIV
         {
 
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal principal = new frmMenuPrincipal();
+            this.Close();
+            principal.Show();
+        }//fin evento btnAtras_Click
     }
 }

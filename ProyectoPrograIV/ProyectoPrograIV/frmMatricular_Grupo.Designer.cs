@@ -44,6 +44,7 @@
             this.lblGrado = new System.Windows.Forms.Label();
             this.cbxSeccion = new System.Windows.Forms.ComboBox();
             this.cbxGrado = new System.Windows.Forms.ComboBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(122, 263);
+            this.btnAgregar.Location = new System.Drawing.Point(109, 263);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(89, 34);
             this.btnAgregar.TabIndex = 57;
@@ -131,7 +132,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(268, 263);
+            this.btnSiguiente.Location = new System.Drawing.Point(299, 263);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(89, 34);
             this.btnSiguiente.TabIndex = 51;
@@ -215,11 +216,23 @@
             this.cbxGrado.TabIndex = 46;
             this.cbxGrado.SelectedIndexChanged += new System.EventHandler(this.cbxGrado_SelectedIndexChanged);
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(204, 263);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(89, 34);
+            this.btnAtras.TabIndex = 60;
+            this.btnAtras.Text = "Atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
             // frmMatricular_Grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 311);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.cbxAlumnos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgregar);
@@ -261,5 +274,6 @@
         private System.Windows.Forms.Label lblGrado;
         private System.Windows.Forms.ComboBox cbxSeccion;
         private System.Windows.Forms.ComboBox cbxGrado;
+        private System.Windows.Forms.Button btnAtras;
     }
 }
