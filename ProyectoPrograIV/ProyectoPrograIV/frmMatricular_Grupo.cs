@@ -16,6 +16,7 @@ namespace ProyectoPrograIV
     {
         public frmMatricular_Grupo()
         {
+            InitializeComponent();
             this.ActiveControl = rdBtnPrimerCiclo;//deja seleccionado este radioButton por defecto
             //Se ponen los metodos para inicializar los combo box
             llenarComboBoxEstudiantes();
@@ -37,7 +38,6 @@ namespace ProyectoPrograIV
         //metodo que obtiene valores de la DB y los carga al combo box estudiantes y a su lista
         private void llenarComboBoxEstudiantes()
         {
-            cbxAlumnos.Items.Clear();
             string query = "Select Carne, Nombre from Estudiantes";//Instruccion SQL
             OleDbConnection conexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Directory.GetCurrentDirectory() + "\\Escuela.accdb");//Conection String
             OleDbCommand cmd = new OleDbCommand(query, conexion);//Ejecuta el comando
