@@ -1,0 +1,17 @@
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmAgregarEstudiante.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmAgregarUsuario.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmAgregarProfesores.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmContrasenna.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmAgregarMateriasAdmin.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmMatricular_Grupo.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmMenuPrincipal.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmMostrar.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmNotas.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.frmVer_MateriasEstandar.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.Properties.Resources.resources
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.csproj.GenerateResource.Cache
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\bin\x86\Debug\ProyectoPrograIV.exe.config
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\bin\x86\Debug\ProyectoPrograIV.exe
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\bin\x86\Debug\ProyectoPrograIV.pdb
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.exe
+C:\Users\Sergio Luis\OneDrive\Proyectos\C#\GitHub\ProyectSpace\ProyectoPrograIV\ProyectoPrograIV\obj\x86\Debug\ProyectoPrograIV.pdb

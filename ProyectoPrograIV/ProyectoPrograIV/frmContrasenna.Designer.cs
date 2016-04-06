@@ -46,11 +46,11 @@
             // txtUsuario
             // 
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuario.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtUsuario.Location = new System.Drawing.Point(144, 217);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(271, 29);
+            this.txtUsuario.Size = new System.Drawing.Size(271, 28);
             this.txtUsuario.TabIndex = 3;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -59,12 +59,12 @@
             // txtContrasenna
             // 
             this.txtContrasenna.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContrasenna.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasenna.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenna.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtContrasenna.Location = new System.Drawing.Point(143, 308);
             this.txtContrasenna.Name = "txtContrasenna";
             this.txtContrasenna.PasswordChar = '*';
-            this.txtContrasenna.Size = new System.Drawing.Size(271, 29);
+            this.txtContrasenna.Size = new System.Drawing.Size(271, 28);
             this.txtContrasenna.TabIndex = 4;
             this.txtContrasenna.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -118,7 +118,7 @@
             // 
             // Wallpaper
             // 
-            this.Wallpaper.Image = ((System.Drawing.Image)(resources.GetObject("Wallpaper.Image")));
+            this.Wallpaper.Image = global::ProyectoPrograIV.Properties.Resources.BaseContrasena;
             this.Wallpaper.Location = new System.Drawing.Point(-1, 0);
             this.Wallpaper.Name = "Wallpaper";
             this.Wallpaper.Size = new System.Drawing.Size(513, 461);

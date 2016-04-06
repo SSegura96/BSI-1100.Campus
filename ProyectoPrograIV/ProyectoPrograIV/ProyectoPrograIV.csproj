@@ -216,109 +216,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btnCerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BaseWallpaper.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnAcceder1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnCerrar1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnInfo1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnRegistarse1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btnAcceder1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btnCerrar1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btnInfo1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btnRegistarse1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BaseAdministrador.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BaseContrasena.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnAtras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btnAtras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn-A-Acceder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn-A-Atras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn-E-Acceder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn-E-Cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn-E-Registarse.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnInfo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-A-Acceder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-A-Atras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-A-Info.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-E-Acceder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-E-Cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-E-Info.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-E-Registarse.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verBD_Estandar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArtesIndustriales.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CienciasNaturales.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Computacion.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EducacionArtistica.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EducacionDelHogar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EducacionFisica.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EducacionMusical.jpg" />
+    <Content Include="Resources\ArtesIndustriales.jpg" />
+    <None Include="Resources\ArtesIndustriales1.jpg" />
+    <Content Include="Resources\verBD_Estandar.jpg" />
+    <None Include="Resources\verBD_Estandar1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EducacionReligiosa.jpg" />
@@ -336,7 +237,40 @@
     <None Include="Resources\Matematicas.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wallpaper.png" />
+    <None Include="Resources\EducacionMusical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EducacionFisica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EducacionDelHogar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EducacionArtistica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CienciasNaturales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseAdministrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseContrasena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-A-Acceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-A-Atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Acceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-E-Cerrar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn-E-Estudiantes.png" />
@@ -360,13 +294,40 @@
     <None Include="Resources\btn-E-Profesores.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\btn-E-Registarse.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\btn-E-Salir.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn-E-Usuario.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\btnInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-A-Acceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-A-Atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-A-Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Acceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Estudiantes.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Over_btn-E-Grupos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over_btn-E-Info.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Over_btn-E-Materias.png" />
@@ -381,16 +342,13 @@
     <None Include="Resources\Over_btn-E-Profesores.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Over_btn-E-Registarse.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Over_btn-E-Salir.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Over_btn-E-Usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseMenuPrincipal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Over_btn-E-Estudiantes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
